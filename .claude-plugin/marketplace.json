@@ -1,0 +1,18 @@
+{
+  "name": "humanizer",
+  "owner": {
+    "name": "Elena",
+    "url": "https://github.com/spacecatburrito"
+  },
+  "metadata": {
+    "description": "Human Writing Editor - make text sound like a person wrote it."
+  },
+  "plugins": [
+    {
+      "name": "humanizer",
+      "source": "./",
+      "version": "1.0.0",
+      "description": "Detects AI tells and rewrites prose for voice, rhythm, and intent. Bilingual EN + RU. Optional custom voice library."
+    }
+  ]
+}
