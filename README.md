@@ -42,3 +42,7 @@ Modes: rewrite (default), check (score + issues, no rewrite), variants (three ve
 Your own texts are optional. On first run the plugin asks once whether you want to teach it your voice (paste a few of your posts, or an author you like) - now or later. Say "later" and it works out of the box.
 
 Full reference: [skills/human-writing-editor/README.md](skills/human-writing-editor/README.md).
+
+## License
+
+[CC BY-NC 4.0](LICENSE) - free to use and share with attribution, no commercial use.
