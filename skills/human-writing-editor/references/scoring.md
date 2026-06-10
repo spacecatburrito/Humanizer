@@ -29,10 +29,10 @@ How much of the text is corporate-fog vocabulary (TELL-004) or buzzword stacking
 
 ### 2. Structural predictability
 
-Symmetric sentences, rule-of-three lists, parallel clauses, balanced bullets (TELL-009)?
+Symmetric sentences, rule-of-three lists, parallel clauses, balanced bullets (TELL-009), or adjacent mirrored two-sentence splits (TELL-027)?
 - 0 = irregular, varied
-- 5 = visibly patterned in places
-- 10 = uniform throughout
+- 5 = visibly patterned in places; one mirrored twin-sentence pair is acceptable, two or more is a tell
+- 10 = uniform throughout, multiple mirrored twin-sentence pairs in the same piece
 
 ### 3. Word-choice abstraction
 

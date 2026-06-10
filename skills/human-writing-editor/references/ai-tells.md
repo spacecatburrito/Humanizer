@@ -511,3 +511,77 @@ Variants: "X is the move", "X is the pitch", "X is the part everyone missed".
 
 **Bad:** "The real story is the receipt mechanic."
 **Better:** "The receipt mechanic explains the move — Apyx bought $29M of STRC the day before the announcement."
+
+---
+
+## TELL-027 · Mirrored twin-sentence split
+
+**Pattern:** Two consecutive sentences that share a starting word (often a pronoun or demonstrative) and/or a mirrored grammatical shape, when one fluid sentence would carry the meaning better.
+
+Common shapes:
+- "It still says X. It just stops doing Y."
+- "We don't make X. We make Y."
+- "You don't want X. You want Y."
+- "This isn't X. This is Y."
+- "Useful for X. Obvious in Y."
+- «Это не про X. Это про Y».
+- «Мы не делаем X. Мы делаем Y».
+
+Trigger: two adjacent sentences where (a) the first 1–3 tokens are nearly identical (`It / It`, `We / We`, `You / You`, `This / This`, `Это / Это`), or (b) the grammatical frames are mirrored (subject-verb-object lengths match within ±2 words).
+
+**Why AI:** LLMs default to balanced two-beat rhetoric when they want a punchy turn. The mirror reads as a learned device, not as natural breath. A human writer would either fuse the two into one sentence (with a comma, a dash, or "just"/"only"/"without") or break the symmetry by lengthening one side.
+
+**Rule:** Used sparingly — at most once per page/post/email — the mirror can land. Used twice in the same piece, it becomes a tell. Used in adjacent sentences twice in a row, it becomes parody.
+
+**Fix:**
+1. **Fuse:** merge into one sentence with a comma, "just" / "only" / "without" / "and", or a colon. This is the default.
+2. **Break the mirror:** lengthen the second half with a clause or example so the shapes stop matching.
+3. **Cap one per piece:** if the rewriter has already used a mirrored split earlier in the same text, reject any new one and fuse it instead.
+
+**Bad:** "It still says what you meant. It just stops announcing where it came from."
+**Better:** "It still says what you meant, just without announcing where it came from."
+
+**Bad:** "We don't make text 'more human'. We make it sound like the person who wrote it."
+**Better:** "We don't make text 'more human' in the abstract — we make it sound like the person who wrote it, with the same point and the same facts."
+
+**Bad:** "You don't want a verdict. You want to know which lines sound like a machine."
+**Better:** "You don't want a verdict, you want to know which lines sound like a machine."
+
+**Bad:** «Это не про скорость. Это про то, что осталось от текста после.»
+**Better:** «Дело не в скорости, а в том, что от текста остаётся после правок.»
+
+---
+
+## TELL-028 · Staccato parallel chains (3+ short mirrored sentences)
+
+**Pattern:** Three or more consecutive short sentences with mirrored grammatical shape and similar length, beating like a drum.
+
+Common shapes:
+- "Prompts are easy to change. Models are easy to swap. Demos are easy to fake."
+- "Seems better. Feels worse. This prompt worked yesterday."
+- "Ship fast. Ship often. Ship broken."
+- "Hire slow. Fire fast. Pay well."
+- «Думай быстро. Решай чётко. Действуй сразу.»
+- «Прототипы дёшевы. Модели сменяемы. Демки фальшивы.»
+
+Trigger: three or more adjacent sentences where (a) each is under ~8 words, (b) the grammatical shape repeats (Noun + verb + adjective + … OR verb-first pattern OR subject + same modal + completion), and (c) the rhythm reads as a deliberate three- or four-beat drum.
+
+This is the chain-of-three (or four) extension of TELL-027 (the mirrored twin). Twin can land once; chain reads as performance and should be smoothed almost every time.
+
+**Why AI:** Manufactured punch. Reads as LinkedIn-influencer cadence — the writer "performing emphasis" instead of writing. A human voice almost never lands three parallel short sentences in a row by accident; when they do appear they read as a scripted beat from a deck. Same family as TELL-005 (fragment chains) but with full subject-verb sentences instead of fragments.
+
+**Rule:** Cap at zero by default. If the source uses the chain deliberately, allow at most ONE such beat per piece, with no more than three items in it, and never a second chain anywhere else in the same text.
+
+**Fix:**
+1. **Fuse into one sentence** with commas, "and", "or", or a colon. This is the default.
+2. **Break the parallel:** keep the meaning but vary the grammar — make one of the three sentences longer with a clause, or restructure so the shapes stop matching.
+3. **Cap to one beat:** if the rewriter has already let one chain through earlier in the same text, fuse any subsequent chain.
+
+**Bad:** "Prompts are easy to change. Models are easy to swap. Demos are easy to fake."
+**Better:** "Prompts, models and demos are all easy to swap. Reliability is the hard part."
+
+**Bad:** "Seems better. Feels worse. This prompt worked yesterday. Why is it suddenly saying nonsense?"
+**Better:** "Every product drifts into vibes-based QA — it seems better, then feels worse, then the prompt that worked yesterday is suddenly saying nonsense."
+
+**Bad:** «Думай быстро. Решай чётко. Действуй сразу.»
+**Better:** «Думать надо быстро, решать чётко, а действовать без раскачки.»

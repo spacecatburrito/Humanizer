@@ -64,6 +64,24 @@ Target distribution for prose: roughly 30% short, 50% medium, 20% long. Don't me
 
 For lists: vary item length. Don't make all three bullets the same shape.
 
+### 3a. Twin-sentence parallelism
+
+A frequent AI move is to take a single idea and split it across two adjacent sentences that mirror each other in shape, often starting with the same word ("It... It...", "We... We...", "You... You...", "This... This..."). See ai-tells.md TELL-027.
+
+The default rewrite is to fuse: join the two sentences into one with a comma, a colon, or a connector like "just", "only", "without", or "and". A mirrored two-sentence beat can work occasionally as a deliberate choice, but only once in a piece. If a mirrored pair already exists earlier in the same text, fuse the next occurrence instead of letting a second one through.
+
+When fusion would lose meaning, break the mirror by lengthening one side with a clause or a specific detail so the two grammatical shapes stop matching.
+
+This applies inside prose paragraphs. Standalone short sentences used for rhetorical punctuation are fine. The tell is the adjacent mirror, not short sentences themselves.
+
+### 3b. Staccato parallel chains (three or more)
+
+The chain-of-three (or four) version of 3a — three or more short sentences in a row that share grammatical shape and similar length, beating like a drum. "Prompts are easy to change. Models are easy to swap. Demos are easy to fake." See ai-tells.md TELL-028.
+
+This pattern is stronger than the twin and almost always reads as performance. Default to fusing the whole chain into one sentence with commas, "and", "or", or a colon — even when the source had it as deliberate emphasis. Cap at zero by default; allow at most one such beat per piece, with no more than three items, only when the source clearly intended it AND no twin-sentence beat has already been used in the same piece, and never let a second chain through anywhere in the text or a fourth item in any chain.
+
+The four-beat or longer chain (e.g. "Seems better. Feels worse. This prompt worked yesterday. Why is it suddenly saying nonsense?") is non-negotiable: always fuse or break it.
+
 ---
 
 ## 4. Remove default transitions
@@ -225,6 +243,22 @@ The shape "You're not just X anymore. You're Y." (TELL-022) almost never survive
 
 ---
 
+## 17. Stay close to the source length
+
+The rewrite should land within **70-130% of the source length**, measured in words. Treat +30% as a hard ceiling, not a target.
+
+A humanized rewrite is mostly a subtraction job (see Rule 1): you cut padding, openers, hedges, and forced conclusions, so the natural result is the same length or shorter. When output balloons to 1.5-2x the input, that growth is itself the tell - the model has re-added explanation, set-up, and importance-framing that a person saying the same thing would never include.
+
+- **Over the ceiling (>130%):** you added, you didn't rewrite. Cut the weakest material - the extra example, the restated point, the throat-clearing sentence - until you're back in band. Do not pad the source up to look thorough.
+- **Under the floor (<70%):** you over-cut and dropped something the author actually claimed. Restore the missing substance, not filler.
+- **Preserve-bound content** (quotes, lists of names, legal text the author needs verbatim) is exempt from the floor - keep it intact even if that pushes the count.
+
+This is a self-check, not a word game: count once before returning. If the draft is outside the band, the fix is almost always Rule 1 applied harder, not synonyms.
+
+Note for heavily stylized voices, where flourish costs words: favor the shorter end of the band and cut content elsewhere to make room. The ceiling still holds.
+
+---
+
 ## Order of operations (cheat sheet)
 
 ```
@@ -233,5 +267,6 @@ FRAME TASK (register: said to one person; goal: be understood)
        → REMOVE TRANSITIONS → KILL REFRAME COUPLETS → REWRITE ARROW STEPS
        → APPLY VOICE → CHECK PARAGRAPH-RHYTHM VARIETY
        → CHECK LAST LINE FOR THEATRICAL REVEAL
+       → CHECK LENGTH IN BAND (70-130% of source)
        → CHECK PRESERVE LIST → SCORE
 ```

@@ -148,6 +148,77 @@ The four axes (use to fine-tune any profile):
 
 ---
 
+## `the-builder` (preset)
+
+Display name: **"The Builder"**. A product-founder voice for LinkedIn / X, calibrated on the public style of plain, anti-hype founders (short declaratives, one strong take, no performance). Offered as a try-before-you-train preset.
+
+**Position:** Mid-formal · Assertive · Concrete · Narrow-analytical.
+
+**Do:**
+- Short, plain declarative sentences. Usually one idea each.
+- State the opinion flatly, no wind-up: "Most onboarding flows are too long. We cut ours to one screen."
+- First person, calm certainty. Own the take.
+- Name the actual decision, number, or tradeoff.
+
+**Avoid:**
+- Hooks and setup-colon reveals ("Here's the thing:").
+- Hustle / motivational cadence, emojis, hashtags.
+- Rule-of-three lists used for rhythm.
+- Hedging stacks.
+
+---
+
+## `paul-graham` (preset)
+
+Display name: **"Paul Graham"**. Calibrated on the published essays of Paul Graham (paulgraham.com). The default voice in the consumer product. Plain declaratives, calm certainty, personal anecdote sliding into abstract principle.
+
+**Position:** Mid-formal · Assertive · Concrete · Analytical-narrative (essays are arguments, but built from observations).
+
+**Do:**
+- Open with a flat declarative claim, not a hook. "Great cities attract ambitious people." "The web is turning writing into a conversation." No wind-up.
+- Build paragraphs out of short and medium sentences. Vary length; do not chase rhythm.
+- Pivot with "But", "And", "So" at the start of a sentence when the argument turns. Use them as logical hinges, not decoration.
+- Hedge honestly with "I think", "I'd guess", "It seems", "Empirically", "Probably". One per claim that genuinely is uncertain; never as filler.
+- Move from a specific case to a general point. A real person, a real place, a real number, then the abstraction it implies.
+- Use plain Germanic words. "Said" not "stated". "Make" not "produce". "Do" not "perform".
+- Allow a parenthetical aside when it sharpens the point without breaking flow.
+- Address the reader directly when the argument needs them ("If you...", "You can see..."). Sparingly.
+- Land each section on the claim, not a flourish. The sentence that names the thing is the ending.
+
+**Avoid:**
+- Setup colons and reveal hooks ("Here's the truth:", "The thing is:").
+- Marketing cadence, motivational closes, rule-of-three lists used for rhythm.
+- Performance words ("absolutely", "incredible", "game-changing").
+- Hedge stacks ("I think it might possibly be the case that...").
+- Emoji, hashtags, all-caps emphasis.
+- Em dashes - PG himself used them, but this voice is rendered under the bundle's em-dash rule, so substitute a comma or a period and let cadence carry the same beat.
+
+**Calibration examples (style only, do not quote):**
+- "It turned out it was way uptown."
+- "Empirically, the answer seems to be: a lot."
+- "I'd always imagined Berkeley would be the ideal place. But when I finally tried living there a couple years ago, it turned out not to be."
+
+---
+
+## `shakespeare` (preset — playful stylization)
+
+Display name: **"William Shakespeare"**. A deliberate Early Modern English stylization, for fun. This is the one voice that **overrides rewrite-principle 0** (the plain "said to one person" register): it is allowed to perform. Never auto-selected; the user opts in.
+
+**Do:**
+- Recast the meaning in Elizabethan diction and cadence: thee / thou / thy, -eth / -est verb endings, inverted word order, an occasional apostrophe ("O ...").
+- Lean on metaphor and imagery drawn from the source's own content.
+- Keep every fact, name, number, URL, and claim from the source intact - costume the meaning, do not change it.
+- Let a loose iambic lilt fall out where it will; a closing couplet is welcome.
+
+**Avoid:**
+- Inventing facts or claims to fit the meter.
+- Modern corporate tells (this voice predates them; "leverage", em dashes, etc. stay out).
+- Going so archaic the point is lost - a modern reader must still understand it.
+
+**Length:** flourish costs words, so favor the shorter end of the band; Rule 17 still holds.
+
+---
+
 ## Voice axis tuning
 
 If user supplies axis values directly (e.g. `formal=0.3, assertive=0.8`), apply them on top of the chosen base profile. Treat as deltas, not overrides.
