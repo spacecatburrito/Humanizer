@@ -174,6 +174,52 @@ This case is the canonical "every individual sentence looks fine but the rhythm 
 
 ---
 
+## EN · Product update — clean but beige (the over-cleaned failure)
+
+This pair teaches the second failure mode: the "before" here has almost NO classic AI tells (AI-ness ~2) and is still bad. Cutting slop is not the finish line; see aliveness.md.
+
+**Before (AI-ness ~2, but dead):**
+> We spent the last month improving our onboarding flow. The previous version had seven steps and completion was 54%. Users often dropped off in the middle of the process. The new version has three steps and completion is 81%. We also fixed several bugs and improved performance. More updates are coming next month.
+
+**Beige tells firing:**
+- BEIGE-003: every sentence 8–14 words, all flat declaratives.
+- BEIGE-001: verbs are had / was / has / is throughout.
+- BEIGE-002: no stake; reads like minutes.
+- Buried lede: the 54→81 jump hides mid-paragraph.
+
+**After (founder voice, alive):**
+> Onboarding completion went from 54% to 81% this month. The fix was subtraction. The old flow had seven steps, and people kept quitting in the middle, right where we asked questions before showing any value. Three steps now, with every question moved past the first result. We shipped bug fixes and speed work too, but if you only try one thing, try the new signup.
+
+**Changes applied:**
+- Lede unburied: the number opens the piece (aliveness technique 5).
+- Shortest sentence on the strongest claim: "The fix was subtraction." (technique 3)
+- Dead verbs replaced with went / quitting / moved / shipped (BEIGE-001 fix).
+- One plain stake: naming subtraction as the fix (BEIGE-002 fix, supported by the source's own facts).
+- No new facts invented: every number and claim is redistributed from the source, not added.
+
+---
+
+## RU · Telegram channel — clean but beige
+
+**Before (AI-ness ~2, but dead):**
+> Мы обновили тарифы. Теперь есть три плана вместо пяти. Старая структура была сложной, и пользователи часто выбирали неподходящий план. Новые тарифы проще и понятнее. Годовая подписка стала дешевле на 20%. Подробности на сайте.
+
+**Beige tells firing:**
+- BEIGE-001: обновили / есть / была / стала — глаголы-состояния.
+- BEIGE-004: «проще и понятнее» — полая оценка без содержания.
+- BEIGE-003: ровные короткие предложения без единого акцента.
+
+**After (operator voice, alive):**
+> Тарифов было пять, стало три. Люди стабильно выбирали не тот план: платили за функции, которые не открывали ни разу, и уходили. Три плана закрывают те же сценарии, но промахнуться уже сложно. Годовая подписка подешевела на 20% - старая цена тянулась ещё от планов, которых больше нет. Детали на сайте.
+
+**Changes applied:**
+- «Проще и понятнее» заменено на конкретный механизм проблемы: платили за неиспользуемое и уходили (BEIGE-004 fix, из фактов исходника).
+- Глаголы действия: выбирали, платили, уходили, закрывают, подешевела.
+- Цене на 20% дано объяснение из логики исходника, а не голая скидка.
+- Ритм: короткое первое предложение, длинное объясняющее второе.
+
+---
+
 ## EN · Academic excerpt
 
 **Before:**

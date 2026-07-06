@@ -1,6 +1,7 @@
 ---
 name: human-writing-editor
 description: Detects AI-sounding patterns in prose and rewrites text into sharper, human, context-aware language while preserving meaning and facts. Use whenever drafting, editing, post-processing, or scoring writing — LinkedIn posts, emails, Telegram messages, channel posts, proposals, landing copy, decks, social media, academic prose. Bilingual (EN + RU). Composable: callable from other agents and skills, and packageable as the prompt core of the consumer humanizer product.
+version: 0.4.0
 ---
 
 # Human Writing Editor
@@ -73,7 +74,7 @@ Do not block on this offer if the user clearly already gave a `voice=` argument 
 
 ### 1. Load references
 
-Always: ai-tells.md, rewrite-principles.md, content-modes.md (filter to `content_type`), voice-profiles.md (filter to `voice`).
+Always: ai-tells.md, rewrite-principles.md, aliveness.md, content-modes.md (filter to `content_type`), voice-profiles.md (filter to `voice`).
 If `language=ru` (or auto-detect=ru): also ru-specific.md.
 
 ### 2. Detect
@@ -87,7 +88,8 @@ Build an issue list. Each issue: `tell_id` (e.g. `TELL-002`), excerpt, why it re
 3. Break predictable rhythm — vary sentence length, drop symmetric structures, kill rule-of-three when artificial.
 4. Remove default transitions (However, Moreover, Additionally; «однако», «более того», «кроме того») — restructure or use direct continuation.
 5. Apply voice profile: tone, sharpness, point-of-view, sentence-length distribution.
-6. Re-read against `preserve` list — verify nothing protected was dropped or altered.
+6. Run the aliveness pass ([references/aliveness.md](references/aliveness.md)): check for BEIGE-001…005, apply the techniques, voice-gated. Cutting slop is not the finish line; the output must read like the author on a good day, not like a sanitized report.
+7. Re-read against `preserve` list — verify nothing protected was dropped or altered.
 
 ### 4. Hard rules (never violate)
 

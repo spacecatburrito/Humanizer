@@ -1,6 +1,6 @@
 # AI-ness Scoring
 
-Score 0–10 across seven dimensions. Final AI-ness = average rounded to nearest integer.
+Score 0–10 across eight dimensions. Final AI-ness = average rounded to nearest integer.
 
 ---
 
@@ -69,6 +69,15 @@ Would each sentence survive being *said aloud to one person's face*, or does it 
 - 5 = several sentences are written-performance shapes (build-ups, reveals, audience-address)
 - 10 = nothing conversational; the whole piece is performed for an audience
 
+### 8. Flatness (beige)
+
+The over-cleaned failure mode: no classic tells, no pulse either. Scored against aliveness.md (BEIGE-001…005): dead verb chains, no stake anywhere, flatline rhythm, hollowed-out claims, every word the most probable one.
+- 0 = the text has a pulse: weighted rhythm, action verbs, at least one concrete image, a discernible author
+- 5 = competent but gray; a reader would skim without retaining anything
+- 10 = minutes-of-a-meeting prose; nothing wrong, nothing alive
+
+Note: this dimension catches texts that score well everywhere else. A piece with sub-scores of 1 on dimensions 1–7 and 8 here is NOT done — it's beige, and the rewrite should run the aliveness pass.
+
 ---
 
 ## Output format for `check` and `score-only` modes
@@ -84,6 +93,7 @@ Sub-scores:
 - Formatting tells: 7
 - Opening/closing: 6
 - Spoken-register: 7
+- Flatness: 3
 
 Top issues:
 1. [TELL-002] Fake contrast formula in line 1
