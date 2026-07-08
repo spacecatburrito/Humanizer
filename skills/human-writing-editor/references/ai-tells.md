@@ -585,3 +585,33 @@ This is the chain-of-three (or four) extension of TELL-027 (the mirrored twin). 
 
 **Bad:** «Думай быстро. Решай чётко. Действуй сразу.»
 **Better:** «Думать надо быстро, решать чётко, а действовать без раскачки.»
+
+---
+
+## TELL-029 · Narrative observation verbs
+
+**Pattern:** A gesture that narrates the act of seeing / retrieving before stating the thing itself:
+- "I see that…"
+- "I notice…"
+- "Looking at this…"
+- "As we can see…"
+- "As you can see…"
+- "According to your…" (also a false-memory tell)
+- «как мы видим…»
+- «как видно…»
+- «отмечу, что…»
+
+**Why AI:** The model performs the act of observing instead of just stating the observation. In assistant prose it doubles as a false-retrieval gesture ("I see from your notes…"). Real writing states the fact; the observing is implied.
+
+**Fix:** Delete the gesture, keep the observation. If the source of the observation matters, name it as a fact, not as an act of looking.
+
+**Bad:** "Looking at the data, I notice retention drops after day 7."
+**Better:** "Retention drops after day 7."
+
+**Bad:** "As we can see, the second cohort churned faster."
+**Better:** "The second cohort churned faster."
+
+**RU bad:** «Как мы видим, вторая когорта отваливается быстрее».
+**RU better:** «Вторая когорта отваливается быстрее».
+
+**Note:** performative intensifier adverbs ("genuinely / honestly / actually / truly") belong to TELL-014; hedge-frame openers ("it's important to note / worth noting") belong to TELL-006; arrow-chains to TELL-021. Don't duplicate those here.

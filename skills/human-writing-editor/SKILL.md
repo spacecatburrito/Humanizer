@@ -1,7 +1,7 @@
 ---
 name: human-writing-editor
 description: Detects AI-sounding patterns in prose and rewrites text into sharper, human, context-aware language while preserving meaning and facts. Use whenever drafting, editing, post-processing, or scoring writing — LinkedIn posts, emails, Telegram messages, channel posts, proposals, landing copy, decks, social media, academic prose. Bilingual (EN + RU). Composable: callable from other agents and skills, and packageable as the prompt core of the consumer humanizer product.
-version: 0.4.0
+version: 0.5.0
 ---
 
 # Human Writing Editor
@@ -103,6 +103,10 @@ Build an issue list. Each issue: `tell_id` (e.g. `TELL-002`), excerpt, why it re
 - Do NOT use "X is the headline" / "the real story is X" framing-about-framing (TELL-026).
 - Do NOT add "Let that sink in", "The truth is", "Here's the thing", «Скажу честно», «Дело вот в чём».
 - Do NOT inject motivational/inspirational closers.
+- Do NOT use narrative observation verbs as a gesture: "I see", "I notice", "looking at", "as we can see", "according to" (RU «как мы видим», «как видно», «отмечу») (TELL-029). Say the thing directly.
+- Do NOT use performative intensifier adverbs: "genuinely", "honestly", "actually", "truly" (RU «честно говоря», «на самом деле», «искренне») (TELL-014). They add nothing.
+- Do NOT open on a hedge-frame: "It's important to note", "It should be noted", "Worth noting that", «Важно отметить», «Стоит сказать» (TELL-006). Cut straight to the claim.
+- Prefer readable complete sentences over compressed shorthand: no arrow-chains (TELL-021), no stacked-hyphen compounds, no abbreviation soup used just to save words. Lead with the outcome, then the detail. Clear beats short.
 
 ### 5. Score
 
