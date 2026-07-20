@@ -53,13 +53,40 @@ Two prepositional or noun fragments. No verb. Pure theatrical contrast.
 
 **Why AI:** Manufactured depth. Reads as theatrical and over-rehearsed. The split and fragment variants are stronger AI/LinkedIn-influencer signals than the canonical comma version because they perform "drop a truth bomb" cadence.
 
-**Fix:** State Y directly. Drop the negation entirely. If Y carries no real claim without the negated X as setup, the whole pair is filler — cut both.
+**Fix:** State Y directly. Drop the negation entirely. If Y carries no real claim without the negated X as setup, the whole pair is filler - cut both.
 
-**Bad:** "It's not just marketing — it's building trust."
+**This applies to the SOURCE draft too.** When the input arrives already wearing
+this construction ("The most expensive part isn't the model. It's ambiguity."),
+rewriting it is not a meaning change - the claim is "ambiguity is the biggest
+cost", and that claim must survive while the contrast scaffold does not.
+Preserving facts, names and numbers never means preserving this template. A
+rewrite that keeps an "It's not X. It's Y." opener has failed on this tell, no
+matter how clean the rest is.
+
+**Replacement menu** - when the author genuinely needs the contrast, pick by
+what the sentence is doing (all examples rework the same claim):
+
+1. Direct assertion, surprise carried by the subject:
+   "Ambiguity is the most expensive part of Claude Code."
+2. Comparative verb, both terms kept:
+   "Ambiguity costs you more than the model does."
+3. Concession, then the claim:
+   "The model has a price tag, but ambiguity is what runs up the bill."
+4. Evidence first, contrast left implicit:
+   "Watch where tokens go: exploration, guessed intent, third rewrites. The
+   model price is noise next to that."
+5. "less about A than B", sparingly, at most once per piece:
+   "The cost is less about the model than about what you left unspecified."
+
+Trailing "B, not A" ("the point is replication, not monitoring") is the same
+tell in tail position - allowed at most once per piece, never as the opener,
+and never as its own dramatic sentence.
+
+**Bad:** "It's not just marketing - it's building trust."
 **Better:** "The first job is making people trust the product."
 
 **Bad:** "Not for monitoring. For replication."
-**Better:** "The point of the recording is replication, not monitoring." (Or just: "The recording is training data.")
+**Better:** "The recording exists to replicate you. Monitoring is a side effect."
 
 **Bad:** "The exit interview isn't feedback. It's the final dataset."
 **Better:** "The exit interview is the last datapoint." (No setup, claim only.)

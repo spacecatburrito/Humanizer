@@ -11,7 +11,7 @@
     {
       "name": "humanizer",
       "source": "./",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "description": "Detects AI tells and rewrites prose for voice, rhythm, and intent. Bilingual EN + RU. Optional custom voice library."
     }
   ]
