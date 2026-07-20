@@ -4,6 +4,21 @@ Format-specific rules. Layered on top of voice profile and base rewrite principl
 
 ---
 
+## `auto`
+
+**Goal:** Caller doesn't know the format; detect it, then apply that mode.
+
+**Rules:**
+- Classify the draft by its shape before rewriting: greeting + sign-off =
+  email; short + addressed to one person = a DM; paragraph post with a claim
+  and takeaway = linkedin; very short + punchy = social-post; citations or
+  formal register = academic; otherwise general.
+- Apply the detected mode's rules exactly as if it had been passed explicitly.
+- When genuinely ambiguous, use general - never force a format the draft
+  doesn't have.
+
+---
+
 ## `linkedin`
 
 **Goal:** Sound like someone with real market experience. Not an agency content engine.
@@ -12,6 +27,12 @@ Format-specific rules. Layered on top of voice profile and base rewrite principl
 - A specific observation, fact, or claim. Not a generic hook.
 - Avoid setup colons ("Here's what most miss:" / "The truth about X:").
 - Avoid questions to the reader ("Ever wonder why…?").
+- If the draft's first line is weak (generic, hedged, or buried lede), rebuild
+  it with a formula from hooks.md, chosen by what the post should earn and
+  built only from facts the draft contains.
+- After the rewrite, append two alternative first lines from DIFFERENT hooks.md
+  formulas, under a plain "Alt openers:" label, each on its own line. The
+  reader picks; do not explain them.
 
 **Body:**
 - 2–6 short paragraphs. Mix lengths.
@@ -149,7 +170,9 @@ Use only the facts in the source. Don't invent market reactions, quotes, names, 
 **Goal:** Generic short-form post (X / Threads / IG caption / personal channel).
 
 **Rules:**
-- Open with a specific observation or claim.
+- Open with a specific observation or claim. When the draft's opener is weak,
+  rebuild it via hooks.md (H1/H2/H6 fit short-form best); no alt-openers block
+  in this mode.
 - Cut all setup hooks.
 - Allow first person.
 - 1–4 short paragraphs depending on platform.
