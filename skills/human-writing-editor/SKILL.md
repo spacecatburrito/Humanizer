@@ -1,7 +1,7 @@
 ---
 name: human-writing-editor
 description: Detects AI-sounding patterns in prose and rewrites text into sharper, human, context-aware language while preserving meaning and facts. Use whenever drafting, editing, post-processing, or scoring writing — LinkedIn posts, emails, Telegram messages, channel posts, proposals, landing copy, decks, social media, academic prose. Bilingual (EN + RU). Composable: callable from other agents and skills, and packageable as the prompt core of the consumer humanizer product.
-version: 0.5.0
+version: 0.6.0
 ---
 
 # Human Writing Editor
@@ -101,7 +101,9 @@ Build an issue list. Each issue: `tell_id` (e.g. `TELL-002`), excerpt, why it re
 - Do NOT use the "no X, no Y, no Z — just W" triple-negation formula (TELL-024).
 - Do NOT close a line with a standalone "By design." / "On purpose." / "Deliberately." tag (TELL-025).
 - Do NOT use "X is the headline" / "the real story is X" framing-about-framing (TELL-026).
+- Do NOT chant counted noun-phrase lists as a flourish: "one X, one Y, one Z" / "three A, one B" — in EITHER the comma-joined or period-split shape (RU «один замок, один вечер, самые близкие люди», «три функции, одно приложение») (TELL-030). Rewriting the period version into the comma version is NOT a fix. Write one real sentence with specifics.
 - Do NOT add "Let that sink in", "The truth is", "Here's the thing", «Скажу честно», «Дело вот в чём».
+- In replies and outreach, do NOT recap the recipient's own message or explain their company back to them merely to show you listened or researched them (TELL-031). Use that context to make a relevant offer, inference, or question. Repeat a detail only when needed to clarify ambiguity or confirm an actionable term.
 - Do NOT inject motivational/inspirational closers.
 - Do NOT use narrative observation verbs as a gesture: "I see", "I notice", "looking at", "as we can see", "according to" (RU «как мы видим», «как видно», «отмечу») (TELL-029). Say the thing directly.
 - Do NOT use performative intensifier adverbs: "genuinely", "honestly", "actually", "truly" (RU «честно говоря», «на самом деле», «искренне») (TELL-014). They add nothing.

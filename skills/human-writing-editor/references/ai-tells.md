@@ -642,3 +642,49 @@ This is the chain-of-three (or four) extension of TELL-027 (the mirrored twin). 
 **RU better:** «Вторая когорта отваливается быстрее».
 
 **Note:** performative intensifier adverbs ("genuinely / honestly / actually / truly") belong to TELL-014; hedge-frame openers ("it's important to note / worth noting") belong to TELL-006; arrow-chains to TELL-021. Don't duplicate those here.
+
+---
+
+## TELL-030 · Counted noun-phrase enumeration ("one X, one Y, one Z")
+
+**Pattern:** A short list of bare noun phrases, usually numbered or parallel, offered as an evocative flourish instead of a sentence. Comes in two shapes that are the SAME tell — count them together, don't let the comma version slip past:
+- **Comma-joined (one breath):** "One city, one weekend, the best speakers." · "Three people, one app." · "One team, one dream." · «Один город, одни выходные, лучшие спикеры.» · «Три функции, одно приложение.»
+- **Period-split (drumbeat):** "One city. One weekend. The best speakers." · «Один город. Одни выходные. Лучшие спикеры.»
+
+Trigger: two or more parallel noun phrases (often opening with a numeral — one / three / два / три — or a repeated determiner) presented WITHOUT a verb doing real work, functioning as a tagline, greeting, or emotional beat. The numbers make it worse: "one X, one Y" and "three A, one B" are the highest-signal variants.
+
+**Why AI:** It is the single most reliable "warm marketing copy" tell. The model reaches for a rhythmic count-and-list to manufacture emotion it hasn't earned with content. Real invitations and real product copy say what is actually happening in a full sentence; they don't chant a bill of particulars. Readers flag it on sight as machine-written. Related to TELL-028 (staccato parallel *sentences*) and TELL-009 (over-balanced symmetry), but distinct: those are subject-verb sentences or general parallelism; this is bare **noun-phrase** enumeration used as a flourish, and it hides inside a single comma-joined line where the period-based detectors miss it.
+
+**Fix:** Write one real sentence that says what is happening and why it matters, with specifics. Kill the count.
+1. **Say the event:** replace the chant with the concrete thing. Add a real detail (the century, the place, the surprise) instead of an abstract triple.
+2. **Never restore the count:** rewriting "one X. one Y. one Z." into "one X, one Y, one Z" is NOT a fix — it's the same tell in the comma shape.
+
+**Bad:** "One city, one weekend, the best speakers."
+**Better:** "The conference runs over one weekend in Lisbon, and two of the speakers are founders who rarely talk in public. Come if you can."
+
+**Bad:** "Three functions. One app."
+**Better:** "The app gets you to the venue, keeps everything you need in one place, and sends you home with every photo of the day."
+
+**RU bad:** «Один город, одни выходные, лучшие спикеры.»
+**RU better:** «Конференция пройдёт за одни выходные в Лиссабоне, и среди спикеров два фаундера, которые редко выступают публично. Приходите, если получится.»
+
+**RU bad:** «Три функции, одно приложение.»
+**RU better:** «Приложение поможет добраться, ничего не забыть и увезти с собой все фотографии этого дня.»
+
+---
+
+## TELL-031 · Parroting the recipient's context
+
+**Pattern:** A reply repeats what the recipient just said, lists their named contacts or investor categories, or summarizes their own company from research before getting to the offer. Often disguised as personalization: "You are currently speaking with VCs, family offices, launchpads and strategic angels..."
+
+**Why it fails:** The recipient already knows this. Restating it makes the reply feel generated and asks them to read their own information again without gaining anything. Readers recognize it as filler immediately.
+
+**Fix:** Use the context silently to choose the offer, useful inference, or next question. Start with that contribution. "I saw your website says..." is not useful personalization unless it leads to a specific observation the recipient can act on. Do not disguise the same recap with synonyms.
+
+**Bad:** "You are speaking with investment banks, family offices, launchpads, VCs and strategic angels while hiring for BD."
+**Better:** "Send me the deck and I'll check where we can help."
+
+**RU bad:** «Вы сейчас привлекаете капитал и общаетесь с фондами, банками и бизнес-ангелами.»
+**RU better:** «Пришли дек, посмотрю, где мы можем помочь.»
+
+**Boundary:** Applies to replies and outreach, not requested summaries or handoffs to a new reader. A brief acknowledgment is fine. Repeat a specific fact when resolving ambiguity, confirming scope or terms, or explaining a concrete recommendation. Preserve facts without requiring every input fact to appear in the reply.
